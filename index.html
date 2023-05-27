@@ -1,143 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB+Garamond|Audiowide&effect=fire">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="contact-form.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB+Garamond|Audiowide&effect=fire">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="contact-form.css">
 
-    <title>Steven Bristol - Web Designer and Computer Programmer</title>
-    <style>
-      .fa {
-        color: white;
-        height: 50px;
-        width: 50px;
-        margin: 0px 5px;
-      }
+  <title>Steven Bristol - Web Designer and Computer Programmer</title>
+  <style>
+    .fa {
+      color: white;
+      height: 50px;
+      width: 50px;
+      margin: 0px 5px;
+    }
 
-      body {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-        margin: 0;
-        background-image: linear-gradient(black, red);
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-      }
+    body {
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      min-height: 100vh;
+      margin: 0;
+      background-image: linear-gradient(black, red);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+    a {
+      color: white;
+    }
 
-      a {
-        color: white;
-      }
+    .title_greeting {
+      justify-self: center;
+      font-size: 50px;
+      font-family: "Audiowide", serif;
+      color: DarkBlue;
+      text-align: center;
+    }
+    .me {
+      margin: 10px 100px 10px 30px;
+      border: thick inset black;
+      height: 350px;
+      width: 200px;
+    }
+    .about_text {
+      font-size: 17px;
+      font-family: "EB+Garamond", serif;
+      color: white;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
 
-      .title_greeting {
-        display: flex;
-        justify-content: center;
-        font-size: 50px;
-        font-family: "Audiowide", serif;
-        color: DarkBlue;
-      }
+    .pic_and_about_container {
+      grid-row: 2;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+      align-items: center;
+      justify-items: center;
+    }
 
-      .me {
-        margin: 10px 100px 10px 30px;
-        border: thick inset black;
-        float: left;
-        height: 350px;
-        width: 200px;
-      }
-
-      .about_text {
-        font-size: 17px;
-        font-family: "EB+Garamond", serif;
-        color: white;
-        text-align: center;
-      }
-
-      .pic_and_about_container {
-        flex: 1;
-      }
-
-      .footer {
-        display: flex;
-        height: 50px;
-        align-items: flex-end;
-        justify-content: center;
-        width: 100%;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="welcome">
-      <h1 class="font-effect-fire title_greeting">Welcome to Steven Bristol's Homepage!</h1>
+    .footer {
+      display: flex;
+      height: 50px;
+      align-items: flex-end;
+      justify-content: center;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div id="welcome">
+    <h1 class="font-effect-fire title_greeting">Welcome to Steven Bristol's Homepage!</h1>
+  </div>
+  <div class="pic_and_about_container">
+    <div id="picture">
+      <img src="me.jpg" alt="A photo of me, Steven Bristol" class="me"/>
     </div>
-    <div class="pic_and_about_container">
-      <div id="picture">
-        <img src="me.jpg" alt="A photo of me, Steven Bristol" class="me"/>
-      </div>
-      <div id="about">
-        <p class="about_text">
-          My name is Steven Bristol, and I am a web designer and Python
-          programmer located in Northern New Jersey, USA. I first discovered
-          my passion for programming when I made my mother, an artist, a
-          website to sell her paintings. Since then, I've been making websites
-          and learning how to program. I first learned C++, but soon learned
-          that Python is just as powerful and much more coherent, so that is
-          my preferred programming language now.
-          <br><br>
-          I have earned the following certifications:
-          <br>
-          <a href="https://www.udemy.com/certificate/UC-9fd6e8ac-ea47-4c8d-851d-113aa63a0823/" target="_blank">Udemy: 100 Days of Code Python BootCamp</a>
-          <br>
-          <a href="https://www.freecodecamp.org/certification/fcc9d5a0e70-6400-4355-8445-1750a82996a8/javascript-algorithms-and-data-structures" target="_blank">FreeCodeCamp: Javascript Algorithms and Data Structures</a>
-          <br>
-          <a href="https://www.freecodecamp.org/certification/fcc9d5a0e70-6400-4355-8445-1750a82996a8/responsive-web-design" target="_blank">FreeCodeCamp: Responsive Web Design</a>
-          <br><br>
-          To contact me, please click the envelope at the bottom of the page
-          or complete the following contact form.
-          <br><br>
-          Thank you for visiting my website!
-        </p>
-      </div>
+    <div id="about">
+      <p class="about_text">
+        My name is Steven Bristol, and I am a web designer and Python
+        programmer located in Northern New Jersey, USA. I first discovered
+        my passion for programming when I made my mother, an artist, a
+        website to sell her paintings. Since then, I've been making websites
+        and learning how to program. I first learned C++, but soon learned
+        that Python is just as powerful and much more coherent, so that is
+        my preferred programming language now.
+        <br><br>
+        I have earned the following certifications:
+        <br>
+        <a href="https://www.freecodecamp.org/certification/fcc9d5a0e70-6400-4355-8445-1750a82996a8/javascript-algorithms-and-data-structures" target="_blank">FreeCodeCamp: Javascript Algorithms and Data Structures</a>
+        <br>
+        <a href="https://www.freecodecamp.org/certification/fcc9d5a0e70-6400-4355-8445-1750a82996a8/responsive-web-design" target="_blank">FreeCodeCamp: Responsive Web Design</a>
+        <br><br>
+        To contact me, please click the envelope at the bottom of the page
+        or complete the following contact form.
+        <br><br>
+        Thank you for visiting my website!
+      </p>
     </div>
-    <div class="fcf-body">
-    <div id="fcf-form">
-    <h3 class="fcf-h3">Contact Me</h3>
-    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
-        <div class="fcf-form-group">
-            <label for="Name" class="fcf-label">Your name:</label>
-            <div class="fcf-input-group">
-                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
-            </div>
-        </div>
-        <div class="fcf-form-group">
-            <label for="Email" class="fcf-label">Your email address:</label>
-            <div class="fcf-input-group">
-                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
-            </div>
-        </div>
-        <div class="fcf-form-group">
-            <label for="Message" class="fcf-label">Your message:</label>
-            <div class="fcf-input-group">
-                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
-            </div>
-        </div>
-        <div class="fcf-form-group">
-            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
-        </div>
-    </form>
-    </div>
-
 </div>
-<br><br><br>
-    <div class="footer">
-      <a href="https://www.facebook.com/steven.bristol.7165" target="_blank"><i class="fa fa-facebook"></i></a>
-      <a href="https://twitter.com/StevenBristol6" target="_blank"><i class="fa fa-twitter"></i></a>
-      <a href="mailto:stevenbristol323@gmail.com"><i class="fa fa-envelope"></i></a>
-      <a href="https://www.linkedin.com/in/daxdexico/" target="_blank"><i class="fa fa-linkedin"></i></a>
-      <a href="https://www.youtube.com/channel/UCZ3OCze4NEMGlMlts_9_kog" target="_blank"><i class="fa fa-youtube"></i></a>
-      <a href="https://www.instagram.com/bristol5877/" target="_blank"><i class="fa fa-instagram"></i></a>
-      <a href="https://www.reddit.com/user/Fir3-Walk-With-M3" target="_blank"><i class="fa fa-reddit"></i></a>
-    </div>
-    </body>
+<div class="fcf-body">
+<div id="fcf-form">
+<h3 class="fcf-h3">Contact Me</h3>
+<form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+<div class="fcf-form-group">
+  <label for="Name" class="fcf-label">Your name:</label>
+  <div class="fcf-input-group">
+    <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+  </div>
+</div>
+<div class="fcf-form-group">
+  <label for="Email" class="fcf-label">Your email address:</label>
+  <div class="fcf-input-group">
+    <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+  </div>
+</div>
+<div class="fcf-form-group">
+  <label for="Message" class="fcf-label">Your message:</label>
+  <div class="fcf-input-group">
+    <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+  </div>
+</div>
+<div class="fcf-form-group">
+  <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+</div>
+</form>
+</div>
+</div>
+<div class="footer">
+<a href="https://www.facebook.com/steven.bristol.7165" target="_blank"><i class="fa fa-facebook"></i></a>
+<a href="https://twitter.com/StevenBristol6" target="_blank"><i class="fa fa-twitter"></i></a>
+<a href="mailto:stevenbristol323@gmail.com"><i class="fa fa-envelope"></i></a>
+<a href="https://www.linkedin.com/in/daxdexico/" target="_blank"><i class="fa fa-linkedin"></i></a>
+<a href="https://www.youtube.com/channel/UCZ3OCze4NEMGlMlts_9_kog" target="_blank"><i class="fa fa-youtube"></i></a>
+<a href="https://www.instagram.com/bristol5877/" target="_blank"><i class="fa fa-instagram"></i></a>
+<a href="https://www.reddit.com/user/Fir3-Walk-With-M3" target="_blank"><i class="fa fa-reddit"></i></a>
+</div>
+<p style="color: white; text-align: center;">© Steven Bristol 2023</p>
+</body>
 </html>
